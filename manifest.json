@@ -1,0 +1,42 @@
+{
+  "name": "Script Library Manager - Aveva System Platform",
+  "short_name": "Script Library",
+  "description": "Manage and organize QuickScript/VBScript snippets for Aveva System Platform development",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1e40af",
+  "theme_color": "#1e40af",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' fill='%231e40af'/%3E%3Cpath fill='%23ffffff' d='M60 50l20-10 20 10v20l-20 10-20-10V50zm52 30l20-10 20 10v20l-20 10-20-10V80zm0 40l20-10 20 10v20l-20 10-20-10v-20z'/%3E%3C/svg%3E",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' fill='%231e40af'/%3E%3Cpath fill='%23ffffff' d='M160 130l50-25 50 25v50l-50 25-50-25v-50zm130 80l50-25 50 25v50l-50 25-50-25v-50zm0 100l50-25 50 25v50l-50 25-50-25v-50z'/%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["productivity", "developer-tools", "utilities"],
+  "screenshots": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1280 720'%3E%3Crect width='1280' height='720' fill='%23f8fafc'/%3E%3Ctext x='640' y='360' text-anchor='middle' font-family='Arial' font-size='48' fill='%230f172a'%3EScript Library Manager%3C/text%3E%3C/svg%3E",
+      "sizes": "1280x720",
+      "type": "image/svg+xml",
+      "form_factor": "wide"
+    }
+  ],
+  "share_target": {
+    "action": "/",
+    "method": "GET",
+    "enctype": "application/x-www-form-urlencoded",
+    "params": {
+      "title": "title",
+      "text": "text"
+    }
+  }
+}

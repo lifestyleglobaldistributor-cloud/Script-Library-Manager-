@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Start Guide - Script Library Manager</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1 {
+            color: #1e40af;
+            border-bottom: 3px solid #1e40af;
+            padding-bottom: 0.5rem;
+        }
+        h2 {
+            color: #1e3a8a;
+            margin-top: 2rem;
+        }
+        .step {
+            background: #f0f9ff;
+            border-left: 4px solid #1e40af;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        code {
+            background: #e5e7eb;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+        pre {
+            background: #1f2937;
+            color: #f3f4f6;
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+        .btn-link {
+            display: inline-block;
+            background: #1e40af;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            margin: 1rem 0;
+        }
+        .btn-link:hover {
+            background: #1e3a8a;
+        }
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .feature-card {
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        .feature-card h3 {
+            color: #1e40af;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>🚀 Quick Start Guide</h1>
+    <p><strong>Script Library Manager for Aveva System Platform Developers</strong></p>
+
+    <a href="index.html" class="btn-link">→ Launch Script Library Manager</a>
+
+    <h2>📋 What is This?</h2>
+    <p>A Progressive Web Application (PWA) that helps you store, organize, and reuse QuickScript/VBScript code snippets for Aveva System Platform development.</p>
+
+    <div class="feature-list">
+        <div class="feature-card">
+            <h3>📦 Store Scripts</h3>
+            <p>Save all your reusable code snippets with descriptions and tags</p>
+        </div>
+        <div class="feature-card">
+            <h3>🔍 Quick Search</h3>
+            <p>Find scripts instantly by name, tags, or content</p>
+        </div>
+        <div class="feature-card">
+            <h3>📁 Organize</h3>
+            <p>4 categories: PLC Comms, Calculations, Alarms, Data</p>
+        </div>
+        <div class="feature-card">
+            <h3>🔌 Offline First</h3>
+            <p>Works completely offline - no internet needed</p>
+        </div>
+        <div class="feature-card">
+            <h3>💾 Export/Import</h3>
+            <p>Backup and share your entire script library</p>
+        </div>
+        <div class="feature-card">
+            <h3>🎨 Dark/Light Theme</h3>
+            <p>Choose your preferred theme</p>
+        </div>
+    </div>
+
+    <h2>⚡ 60-Second Setup</h2>
+
+    <div class="step">
+        <strong>Step 1:</strong> Open <code>index.html</code> in any modern web browser
+    </div>
+
+    <div class="step">
+        <strong>Step 2:</strong> Explore 8 pre-loaded script templates
+    </div>
+
+    <div class="step">
+        <strong>Step 3:</strong> Click "Add New Script" to create your first custom script
+    </div>
+
+    <div class="step">
+        <strong>Step 4:</strong> Use search and filters to find scripts quickly
+    </div>
+
+    <h2>🎯 How to Use</h2>
+
+    <h3>Adding a Script</h3>
+    <ol>
+        <li>Click <strong>"Add New Script"</strong> button</li>
+        <li>Fill in:
+            <ul>
+                <li>Script Name (e.g., "Read PLC Tag Value")</li>
+                <li>Category (PLC Comms, Calculations, Alarms, or Data)</li>
+                <li>Description (what it does)</li>
+                <li>Tags (comma-separated keywords)</li>
+                <li>Your QuickScript/VBScript code</li>
+            </ul>
+        </li>
+        <li>Click <strong>"Save Script"</strong></li>
+    </ol>
+
+    <h3>Using Parameter Placeholders</h3>
+    <p>Use <code>{{PARAMETER_NAME}}</code> for values that change:</p>
+    <pre>
+' Example with parameters
+Dim tagValue
+tagValue = ReadValue({{TagName}})
+{{ResultTag}} = tagValue
+    </pre>
+    <p>When using the script, replace:</p>
+    <ul>
+        <li><code>{{TagName}}</code> → <code>"Reactor1.Temperature"</code></li>
+        <li><code>{{ResultTag}}</code> → <code>"Display_Temp"</code></li>
+    </ul>
+
+    <h3>Finding Scripts</h3>
+    <ul>
+        <li><strong>Search Box:</strong> Type keywords to search across all fields</li>
+        <li><strong>Category Filters:</strong> Click categories in sidebar</li>
+        <li><strong>Sort:</strong> By name, date, or category</li>
+    </ul>
+
+    <h3>Exporting Scripts</h3>
+    <p><strong>Single Script:</strong></p>
+    <ol>
+        <li>Click script card to view details</li>
+        <li>Click "Export .txt" or "Export .script"</li>
+        <li>File downloads with header comments</li>
+    </ol>
+
+    <p><strong>Entire Library:</strong></p>
+    <ol>
+        <li>Click export icon in header</li>
+        <li>JSON file downloads (backup)</li>
+        <li>Use "Import" to restore later</li>
+    </ol>
+
+    <h2>📚 Pre-loaded Templates</h2>
+    <p>The app includes 8 ready-to-use script templates:</p>
+    <ul>
+        <li><strong>PLC Communications:</strong> Read/Write tags with error handling</li>
+        <li><strong>Calculations:</strong> Average with range validation</li>
+        <li><strong>Alarm Handling:</strong> Acknowledge alarms, filter by priority</li>
+        <li><strong>Data Manipulation:</strong> Sort arrays, parse strings, format timestamps</li>
+    </ul>
+
+    <h2>💡 Pro Tips</h2>
+
+    <div class="step">
+        <strong>Tip 1:</strong> Use descriptive tags like "error-handling", "retry-logic", "plc-read"
+    </div>
+
+    <div class="step">
+        <strong>Tip 2:</strong> Export your library regularly as backup (it's stored in browser)
+    </div>
+
+    <div class="step">
+        <strong>Tip 3:</strong> Copy code using "Copy" button, then paste into System Platform IDE
+    </div>
+
+    <div class="step">
+        <strong>Tip 4:</strong> Use parameter naming convention: <code>{{PascalCase}}</code>
+    </div>
+
+    <div class="step">
+        <strong>Tip 5:</strong> Toggle dark theme for comfortable late-night coding
+    </div>
+
+    <h2>🔧 Common Use Cases</h2>
+
+    <h3>1. Tag Reading with Error Handling</h3>
+    <pre>
+' Read PLC Tag Value with Error Handling
+If InTouchTag({{TagName}}) Then
+    {{ResultTag}} = ReadValue({{TagName}})
+Else
+    LogMessage "Error: Tag not found"
+    {{ResultTag}} = 0
+End If
+    </pre>
+
+    <h3>2. Batch Alarm Acknowledgment</h3>
+    <pre>
+' Acknowledge All Active Alarms
+alarmCount = wwAlarmTotalRecords()
+If alarmCount > 0 Then
+    result = wwAcknowledgeAllAlarms()
+End If
+    </pre>
+
+    <h3>3. String Parsing (Barcodes)</h3>
+    <pre>
+' Parse Delimited String
+parts = Split({{InputString}}, "{{Delimiter}}")
+{{Part1Tag}} = Trim(parts(0))
+{{Part2Tag}} = Trim(parts(1))
+    </pre>
+
+    <h2>📱 Install as App</h2>
+    <p><strong>Desktop (Chrome/Edge):</strong></p>
+    <ol>
+        <li>Open app in browser</li>
+        <li>Look for "Install" icon in address bar</li>
+        <li>Click to install as standalone app</li>
+    </ol>
+
+    <p><strong>Mobile (Android):</strong></p>
+    <ol>
+        <li>Open in Chrome</li>
+        <li>Menu → "Install app"</li>
+        <li>App appears on home screen</li>
+    </ol>
+
+    <p><strong>Mobile (iOS):</strong></p>
+    <ol>
+        <li>Open in Safari</li>
+        <li>Share → "Add to Home Screen"</li>
+        <li>Icon appears on home screen</li>
+    </ol>
+
+    <h2>🛟 Need Help?</h2>
+    <ul>
+        <li><strong>Scripts not saving?</strong> Check browser storage settings</li>
+        <li><strong>Export not working?</strong> Check download permissions</li>
+        <li><strong>PWA won't install?</strong> Ensure HTTPS or localhost</li>
+        <li><strong>Search not working?</strong> Try fewer keywords</li>
+    </ul>
+
+    <h2>🔒 Privacy & Security</h2>
+    <ul>
+        <li>✅ All data stored locally in your browser</li>
+        <li>✅ No external connections or tracking</li>
+        <li>✅ Works completely offline</li>
+        <li>✅ Data never leaves your device</li>
+        <li>⚠️ Clear browser data = delete scripts (export backups!)</li>
+    </ul>
+
+    <h2>📖 Full Documentation</h2>
+    <p>See <code>README.md</code> for complete documentation including:</p>
+    <ul>
+        <li>Detailed feature explanations</li>
+        <li>Advanced usage tips</li>
+        <li>Troubleshooting guide</li>
+        <li>Best practices</li>
+        <li>Integration with System Platform</li>
+    </ul>
+
+    <hr style="margin: 3rem 0;">
+
+    <div style="text-align: center; color: #6b7280;">
+        <p><strong>Ready to boost your productivity?</strong></p>
+        <a href="index.html" class="btn-link">🚀 Launch Script Library Manager</a>
+        <p style="margin-top: 2rem;">Made for Aveva System Platform Developers</p>
+    </div>
+
+</body>
+</html>
